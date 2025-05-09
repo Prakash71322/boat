@@ -1,0 +1,121 @@
+Understanding Kubernetes Architecture
+
+Kubernetes Cluster Architecture
+Kubernetes API Primitives
+Kubernetes Services and Network Primitives
+Introduction to Kubernetes
+
+Overview of Dockers and Containers
+What is Container Orchestration?
+Evolution of Kubernetes
+Differences between Kubernetes and Docker Swarm
+What is Kubernetes
+Kubernetes Use Cases
+Managing the Kubernetes Cluster
+
+Upgrading the Kubernetes Cluster
+Operating System Upgrades within a Kubernetes Cluster
+Backing Up and Restoring a Kubernetes Cluster
+ETCD
+Kube-API Server
+Controller Manager Scheduler
+kubelet
+Installation of kubelet in worker nodes in kubeadm method kube proxy
+PODs
+Pods creation using yaml file ReplicaSets
+ReplicaSet creation using yaml file Deployments
+Deployment creation using yaml file Services, Service Cluser IP
+Service creation using yaml file Job Scheduling Using Kubernetes Scheduler
+Working with Namespaces and Pods
+
+Overview of Namespaces and creating Namespaces
+Introduction to Pods
+Pods Lifecycle
+Working with YAML files
+Working with Pods to manage multiple containers
+Deploying Pods using kubectl run command.
+Scheduling Pods
+
+Manual Scheduling
+Scheduling Pod using Binding Labels and Selectors
+Labels and Selectors in ReplicaSet Resource Requiments and Limits
+Create a POD with resource requirement & Limit DeamonSets
+Create DaemonSets Static Pods
+Multiple Scheduler
+Docker commands instead of kubectl commands in static POD Assisted Practice: Multiple Scheduler – Introduction
+Configure the POD with custom scheduler Assisted Practice: Create custom scheduler in Kubeadm Task Allocation Using Kubernetes Scheduler
+Logging and Monitoring
+
+Monitor Cluster Components
+Install and configure Metric Server Managing Application Logs
+kubectl top commands
+Viewing logs in multicontainer POD Health Monitoring Using Kubernetes
+Application Lifecycle Management
+
+Rolling Updates and Rollbacks
+Deployment rolling update with kubectl rollout (command)
+Assisted Practice: Deployment rolling update by editing the Deployment file
+Assisted Practice: Rollout status check
+Rollout pause and resume
+Rollbacks with command and deployment file
+Assisted Practice: Updating the rollback deployment method
+Configure Applications
+Commands and Arguments
+Scale up application with more replicas
+Assisted Practice: Scale down application with fewer replicas
+Assisted Practice: Scale up and down with kubectl command
+Multi-container PODs
+Create a multi-container pod that accesses the same volume
+Multi-container PODs Design Patterns
+InitContainers
+InitContainers Demonstration
+Self-Healing Applications
+Autoscaling and Cluster Resource Management
+Cluster Maintenance
+
+OS Upgrades
+Drain node Assisted Practice: Cordon node Assisted Practice: Uncordon node Kubernetes Software versions Cluster Upgrade Process
+kube-apiserver Assisted Practice: kubelet and kube-proxy Backup and Restore Methods
+Backup Resource configs Assisted Practice: Backup etcd
+Restore etcd
+CICD (Continues Integration and Continues Deployment)
+Managing Data in the Kubernetes Cluster
+
+Persistent Volumes
+Volume Access Modes
+Persistent Volume Claims
+Storage Objects
+Applications with Persistent Storage
+Storage and Volumes
+
+Volumes
+Create a volume with Declarative (Yaml) Assisted Practice: Create a volume with Host path (Host Drive) Assisted Practice: Create a volume with Empty Dir (Auto deletion) Assisted Practice: Create a volume with nfs share
+Persistent Volumes
+Introduction to Persistent volume
+Create a persistent volume with declarative (yaml) Persistent Volume Claims
+Introduction to Persistent volume claims
+Create a persistent volume claims with declarative (yaml) Application Configuration
+Pod Creation with volumes
+Pod Creation with Persistent volume Claims Deploy Large scale Applications
+Troubleshooting: Application Failures, Control Panel Failures, and Network Failures
+
+Application failure
+Application Failure – Check POD, Logs and Events Control Panel Failure
+Check controlplane failure status in POD and service Worker Node Failure
+Check Node status, describe node to know cause Assisted Practice: Top command to check node performance Assisted Practice: Connectivity with master and cert status Assisted Practice: Worker node failure checks
+Networking Failure
+Service connectivity check Assisted Practice: Nslookup check
+kube-proxy check and CNI plugin check Assisted Practice: Network failure check in above stuffs Debugging
+Kubernetes Schedulings
+
+Overview of kube-scheduler
+Scheduling with kube-scheduler
+Scheduler Policies
+Horizontal Pod Autoscaling
+Affinity and Anti-Affinity
+Troubleshooting in Kubernetes
+
+Troubleshooting Application Failure
+Troubleshooting Control Plane Failure
+Troubleshooting Worker Node Failure
+Troubleshooting Networking

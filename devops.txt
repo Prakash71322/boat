@@ -1,0 +1,112 @@
+Docker
+What is Container
+What is Docker
+Why Docker: Traditional Vs Virtualization Vs Containerization
+Docker Components
+Install Docker on Ubuntu
+Running Hello World in Docker
+Running a Docker Container in Detached Mode
+Deploy, Login, exit container
+List, Start, Stop, restart containers
+Where containers are stored
+Working with container hostnames
+Working on multiple containers
+Container stats and inspect
+Creating, Starting, Stopping, and Removing Containers
+Writing Your First Docker file
+Build an image
+Packaging a Flask Application Inside a Container
+Versioning an Image with Tags
+Setup private docker registry
+Volume & Storage
+Logs
+
+K8S
+What is Kubernetes
+Kubernetes Cluster
+Kubernetes Architecture
+Why Kubernetes
+Perform Kubernetes essential commands
+Install & configure Multi Node Cluster
+POD
+Deployment
+Service
+Replica set
+Replication controllers
+DaemonSets
+Namespace
+Resource Limits & Pod Scheduling
+Launch a sample application
+Introduction to YAML
+pod.yaml | deployment.yaml | service.yaml | and many more
+Labels & Selectors ✓ MulticontainerPod
+Persistent Volume
+Autoscaling
+Jboss Installation using yaml
+Helm
+Deploy Strategy – Rolling update | Blue-Green
+Drain, Cordon & Uncordon ✓ Taint & Tolerations | Node Selector | Pod Affinity
+Logging & Monitoring
+
+Jenkins
+What is Continuous Integration
+What is Jenkins
+Jenkins Management
+Jenkins Installation on Windows
+Jenkins Installation on Linux
+Jenkins Installation on Docker Container
+Jenkins Installation on Kubernetes POD
+Installing
+Jenkins – Master & Slave setup
+Jenkins Dashboard navigation
+Creating and Running Jobs – Freestyle & Pipeline setup
+Setting up global environments
+Adding and updating Plugins
+Build pipeline Delivery
+Pipeline as a code – Jenkinsfile
+Managing Users & Role based access
+Jenkins – Git Integration
+Jenkins – Maven Integration
+Jenkins – Tomcat Integration
+Jenkins – Docker Integration
+Jenkins – Kubernetes Integration
+Jenkins – Ansible Integration
+Jenkins – Prometheus Integration
+Jenkins – Grafana Integration
+Logging
+Pipeline setup – CICD
+
+Git
+What is Version Control
+What is Git
+Git Alternatives
+GIT Basics
+GIT Command Line
+Installing Git
+Installing on Linux
+Installing on Windows
+Git Essentials
+Creating repository
+Fetch pull and remote
+Branching & Merging
+Creating the Branches, switching the branches, merging branches
+
+Prometheus & Graffana
+Monitoring Cluster Components and Applications
+View the Logs
+Managing Logs
+Logging/Monitoring
+Monitoring tools: Prometheus & Grafana
+
+Ansible
+Ansible Intro
+Ansible Installation
+Configure Control Node & Managed node
+Ansible-Playbook
+Ansible-Vault
+Ansible-Galaxy : Roles
+Modules
+Ansible – Docker
+Ansible – Kubernetes
+Ansible – Git
+Ansible – Jenkins Integration

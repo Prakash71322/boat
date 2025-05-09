@@ -1,0 +1,18 @@
+What is Infrastructure as Code (IaC)?
+	Infrastructure as code is a DevOps practice that manages an application's underlying infrastructure through programming.
+
+What is Terraform?
+	Terraform is open-source communication as a system software tool created by HashiCorp. It is an instrument for building, altering, and versioning transportation safely and professionally. Terraform can direct existing and accepted service providers as well as convention in-house solutions.
+
+What are the reasons for choosing Terraform for DevOps?
+	It can do complete orchestration and not just configuration management (like Ansible and Puppet).
+	Has amazing support of almost all the popular cloud providers like AWS, Azure, GCP, DigitalOcean etc.
+	Easily manages the configuration of an immutable (dynamic) infrastructure.
+	Provide immutable infrastructure where configuration changes smoothly.
+	Works on HCL (HashiCorp configuration language), which is very easy to learn and understand.
+	Easily portable from one provider to another.
+	Easy Installation.
+
+What do you mean by Terraform init?
+	Terraform initializes the code with the command terraform init This command is used to set up the working directory for Terraform configuration files. It is safe to run this command multiple times.
+You can use the init command for Installing Plugins, Installation of a Child Module and Initialization of the backend

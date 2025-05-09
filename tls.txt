@@ -1,0 +1,10 @@
+Generate a Private key
+openssl genrsa -des3 -out domain.key 2048
+Create certificate signing reqest to sign a certificate (a.k.a CSR) 
+Create Self-signed certificate for the above created private key 
+
+
+
+
+https://docs.starlingx.io/security/kubernetes/create-certificates-locally-using-openssl.html
+https://www.baeldung.com/openssl-self-signed-cert

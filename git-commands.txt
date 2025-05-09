@@ -1,0 +1,81 @@
+9 Hours
+
+	Create ssh keys and add public key to remote
+	Create PAT 
+	Create PullRequest/MergeRequest
+	Commit Hash
+	Perform scans after creating merge request
+Basic
+	git clone https://<username>:<token>@github.com/<username1>/<reponame>.git
+	git init <repo name>
+	git remote add origin git@<host>:<username>/<repo>.git --> git@github.com:srikrishnaprakash/newrepo.git
+	git add .
+	git commit -(a)m 
+	git push
+	git status 
+	git restore --staged pom.xml  --> To unstage a staged file 
+	git pull --> To get the newly created branch/latest changes
+	git fetch
+	
+Advanced
+
+	git restore --staged <file> To un-stage a file only & run "git reset --hard" to remove the changed content
+	git restore <filename> --> To remove the newly changed content
+	git reset --hard --> To remove files from staged and remove the newly changed contents in all changed files 
+	git reset --hard commit-hash  --> To remove the latest (items) of commits. Example A1..A10 commit hashes. If you want remove latest 2 A8 is the commit has to be mentioned & 
+		run the command "git push --force"
+	git reset HEAD~2 (For A8 commit-hash content) & run the command "git push --force"
+	git revert <commit-hash> --> To remove particular commit-id given and makes new commit must be pushed
+		HEAD means only local. You can also use HEAD to reset changes locally and remote
+	git rm <filename> --> Remove a file from local repository 
+	git mv <source> <target> --> Move a file
+
+Branching
+
+	git checkout -b <branch name> --> To create branch locally
+	git checkout <branch name> --> Switch the branch 
+	git branch  --> current working branch
+	git branch -a  --> To view all branches
+	git push --set-upstream origin < locally created branch> --> To save locally created branch to remote
+
+Merging
+
+	git merge
+	git log
+	git log -<number> --> Shows last numbered commits only 
+	git log -3 --pretty=format:"%an"
+		%H --> commit hash, %h --> abbreviated commit hash, %T --> tree hash, %t --> abbreviated tree hash, %P --> parent hashes
+		%p --> abbreviated parent hashes, %an --> author name, %aN --> author name (respecting .mailmap, see git-shortlog[1] or git-blame[1])
+		%ae --> author email, %aE --> author email (respecting .mailmap, see git-shortlog[1] or git-blame[1])
+		%al  --> author email local-part (the part before the @ sign)
+		%aL --> author local-part (see %al) respecting .mailmap, see git-shortlog[1] or git-blame[1])
+		%ad --> author date (format respects --date= option)
+		%aD --> author date, RFC2822 style, %ar --> author date, relative, %at --> author date, UNIX timestamp
+		%ai --> author date, ISO 8601-like format, %aI --> author date, strict ISO 8601 format
+		%as --> author date, short format (YYYY-MM-DD), %ah --> author date, human style (like the --date=human option of git-rev-list[1])
+		%cn --> committer name, %cN --> committer name (respecting .mailmap, see git-shortlog[1] or git-blame[1])
+		%ce --> committer email, %cE --> committer email (respecting .mailmap, see git-shortlog[1] or git-blame[1])
+		%cl --> committer email local-part (the part before the @ sign)
+		%cL --> committer local-part (see %cl) respecting .mailmap, see git-shortlog[1] or git-blame[1])
+		%cd --> committer date (format respects --date= option), %cD --> committer date, RFC2822 style
+		%cr --> committer date, relative, %ct --> committer date, UNIX timestamp, %ci --> committer date, ISO 8601-like format
+		%cI --> committer date, strict ISO 8601 format, %cs --> committer date, short format (YYYY-MM-DD)
+		%ch --> committer date, human style (like the --date=human option of git-rev-list[1])
+		%d --> ref names, like the --decorate option of git-log[1]
+	git stash
+	git tag 
+	git tag -a <tag name> -m "<message">  --> To add a tag 
+	git tag -a <tag name> -f <commit hash> -m "<comment>"
+	git push origin --tags  --> Push the tags to remote repository
+
+Utilities 
+	git diff --> Difference between local repository
+	git diff <filename>
+	git diff <branch name> --> Difference between local and the mentioned branch
+	git diff <branch name> <filename> --> Difference between local and the mentioned branch of the mentioned file
+	git diff <branch name>..<another branch> --> Difference between the mentioned branch and another branch (mentioned)
+	git diff <branch name>..<another branch> <filename> --> Difference between the mentioned branch and another branch (mentioned) of the mentioned file
+	git rebase <branch name>
+	git cherry-pick <commit-id>
+	git reflog --> Record of commits from the HEAD perspective
+

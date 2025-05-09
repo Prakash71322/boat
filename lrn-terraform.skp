@@ -1,0 +1,30 @@
+terraform loca_provider
+terraform { 
+	required_version = ">= 0.15" 
+	required_providers { 
+		local = { 
+			source = "hashicorp/local" version = "~> 2.0" 
+		} 
+	}
+}
+
+resource "local_file" "literature" {
+	filename = "art_of_war.txt"
+	<<-EOT  
+		Sun Tzu said: The art of war is of vital importance to the State. It is a matter of life and death, a road either to safety or to ruin. Hence it is a subject of inquiry which can on no account be neglected. 
+	EOT
+}
+
+Initialize terraform again for new providers or modules added
+
+# local_file.literature will be created  
+resource "local_file" "literature" { 
+	content = 
+	<<~EOT 
+		Sun Tzu said: The art of war is of vital importance to the State. It is a matter of life and death, a road either to safety or to ruin. Hence it is a subject of inquiry which can on no account be neglected. 
+	EOT
+	directory_permission = "0777"
+	file_permission = "0777"
+	filename = "art_of_war.txt"
+	id = (known after apply)
+}
