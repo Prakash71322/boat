@@ -1,0 +1,2 @@
+https://learn.microsoft.com/en-us/azure/devops/get-started/?view=azure-devops
+https://learn.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops
